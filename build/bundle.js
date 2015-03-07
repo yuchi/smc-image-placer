@@ -70,6 +70,8 @@ var readAsImage = _filedrop.readAsImage;
 
 var dropzone = document.getElementById("dropzone");
 
+var fontName = "Lato";
+
 var canvas = document.createElement("canvas");
 var context = canvas.getContext("2d");
 var title = document.getElementById("title");
@@ -182,12 +184,12 @@ function update() {
 
   var titleShift = subtitleText ? 50 : 0;
 
-  context.font = "200 " + titleSizeValue + " Oswald";
+  context.font = "100 " + titleSizeValue + " " + fontName;
   context.fillStyle = "white";
   context.fillText(title.value, 50, canvas.height - (50 + titleShift));
 
   if (subtitleText) {
-    context.font = "300 40px Oswald";
+    context.font = "100 40px " + fontName;
     context.fillStyle = "rgba(255,255,255,0.6)";
     context.fillText(subtitle.value, 53, canvas.height - 50);
   }
