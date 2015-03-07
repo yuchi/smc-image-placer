@@ -4,6 +4,8 @@ import filedrop, { readAsImage } from './filedrop';
 
 const dropzone = document.getElementById('dropzone');
 
+const fontName = 'Lato';
+
 const canvas = document.createElement('canvas');
 const context = canvas.getContext("2d");
 const title = document.getElementById('title');
@@ -76,12 +78,12 @@ function update() {
 
   const titleShift = subtitleText ? 50 : 0;
 
-  context.font = '200 ' + titleSizeValue + ' Oswald';
+  context.font = '100 ' + titleSizeValue + ' ' + fontName;
   context.fillStyle = 'white';
   context.fillText(title.value, 50, canvas.height - (50 + titleShift));
 
   if (subtitleText) {
-    context.font = '300 40px Oswald';
+    context.font = '100 40px ' + fontName;
     context.fillStyle = 'rgba(255,255,255,0.6)';
     context.fillText(subtitle.value, 53, canvas.height - 50)
   }
