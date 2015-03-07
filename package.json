@@ -1,0 +1,36 @@
+{
+  "name": "smc-image-placer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pier Paolo Ramon",
+  "license": "LGPL-2.1",
+  "devDependencies": {
+    "babelify": "^5.0.4",
+    "browserify": "^9.0.3",
+    "debowerify": "^1.2.0",
+    "gh-pages": "^0.2.0",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-csso": "^0.2.9",
+    "gulp-ignore": "^1.2.1",
+    "gulp-jade": "^0.10.0",
+    "gulp-less": "^2.0.1",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-rimraf": "^0.1.1",
+    "gulp-uglify": "^1.0.2",
+    "gulp-util": "^3.0.1",
+    "gulp": "^3.8.10",
+    "opn": "^1.0.0",
+    "path": "^0.4.9",
+    "through": "^2.3.6",
+    "watchify": "^2.4.0"
+  },
+  "dependencies": {
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

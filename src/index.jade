@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title SMC Image Placer
+    link(rel="stylesheet",href="build/build.css")
+  body
+    #dropzone: .drop-area
+    .form
+      .control
+        input#title.big-input(tabindex="1",placeholder='Title here please')
+        select#title-size.small(tabindex="3")
+          option(value="68px") 34px
+          option(value="60px") 30px
+          option(value="52px") 26px
+      .control
+        input#subtitle(tabindex="2",placeholder='Subtitle')
+    script(src="build/bundle.js")
