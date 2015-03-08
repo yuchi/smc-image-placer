@@ -15,8 +15,11 @@ const titleSize = document.getElementById('title-size');
 const subtitle = document.getElementById('subtitle');
 
 title.value = window.localStorage.title || '';
-titleSize.value = window.localStorage.titleSize || '';
 subtitle.value = window.localStorage.subtitle || '';
+
+if (window.localStorage.titleSize) {
+  titleSize.value = window.localStorage.titleSize;
+}
 
 const logo = new Image();
 
