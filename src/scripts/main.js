@@ -1,3 +1,5 @@
+import 'babelify/polyfill';
+
 import './detect';
 
 import filedrop, { readAsImage } from './filedrop';
